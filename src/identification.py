@@ -1,4 +1,4 @@
-from commonfunctions import *
+from src.commonfunctions import *
 from preprocessing import *
 import numpy as np
 import cv2
