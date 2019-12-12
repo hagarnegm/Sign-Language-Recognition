@@ -15,8 +15,8 @@ def rgb2cr(rgb_img):
 
 def segment(cr_img):
     segmented = np.copy(cr_img)
-    segmented[segmented[:, :] < 0] = 0
-    segmented[segmented[:, :] > 0] = 1
+    segmented[segmented < 0] = 0
+    segmented[segmented > 0] = 1
 
     return segmented
 
