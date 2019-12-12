@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecbe6bb5-4279-4a1f-a810-6e3024b421df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/trial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonfunctions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/identification.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/identification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing.py" afterDir="false" />
-    </list>
+    <list default="true" id="ecbe6bb5-4279-4a1f-a810-6e3024b421df" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +163,13 @@
       <workItem from="1575827144230" duration="2014000" />
       <workItem from="1575894059286" duration="18350000" />
     </task>
+    <task id="LOCAL؜٠٠٠٠١" summary="descriptor added">
+      <created>1576178969859</created>
+      <option name="number" value="LOCAL؜٠٠٠٠١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠١" />
+      <updated>1576178969859</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +187,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="descriptor added" />
+    <option name="LAST_COMMIT_MESSAGE" value="descriptor added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575893905361">
