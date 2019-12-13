@@ -3,7 +3,7 @@ import numpy as np
 import skimage.io as io
 
 
-def rgb2cr(rgb_img):
+def rgb2ycbcr(rgb_img):
     cr_img = np.zeros((rgb_img.shape[0], rgb_img.shape[1]))
     r = rgb_img[:, :, 0]
     g = rgb_img[:, :, 1]
