@@ -47,7 +47,7 @@ def segment(img):
     show_images([y, cr, cb])
 
 
-img = io.imread('../images/trial.jpg')
+img = io.imread('../images/A3.jpeg')
 img2 = rgb2ycbcr(img)
 segment(img2)
 

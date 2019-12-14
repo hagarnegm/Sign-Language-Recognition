@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecbe6bb5-4279-4a1f-a810-6e3024b421df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/E.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/L.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/L.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sign.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/V.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/circle2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/trial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +47,7 @@
       <recent name="C:\Users\user\PycharmProjects\Sign-Language-Recognition\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.preprocessing">
+  <component name="RunManager" selected="Python.gui">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SignLanguage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,6 +232,7 @@
       <workItem from="1576349266778" duration="161000" />
       <workItem from="1576350395887" duration="638000" />
       <workItem from="1576357602075" duration="818000" />
+      <workItem from="1576358610654" duration="747000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="descriptor added">
       <created>1576178969859</created>
@@ -285,25 +277,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575804275948" />
-    <state width="723" height="207" key="GridCell.Tab.0.bottom" timestamp="1576358428762">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1576359357531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576358428762" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576359357531" />
     <state width="938" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575924228396" />
-    <state width="723" height="207" key="GridCell.Tab.0.center" timestamp="1576358428762">
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1576359357530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576358428762" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576359357530" />
     <state width="938" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575924228396" />
-    <state width="723" height="207" key="GridCell.Tab.0.left" timestamp="1576358428762">
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1576359357530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576358428762" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576359357530" />
     <state width="938" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575924228396" />
-    <state width="723" height="207" key="GridCell.Tab.0.right" timestamp="1576358428762">
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1576359357530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576358428762" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576359357530" />
     <state width="938" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575924228396" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1576348599663">
       <screen x="0" y="0" width="1536" height="824" />
@@ -343,8 +335,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SignLanguage$gui.coverage" NAME="gui Coverage Results" MODIFIED="1576348542448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SignLanguage$gui.coverage" NAME="gui Coverage Results" MODIFIED="1576359356212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/SignLanguage$identification.coverage" NAME="identification Coverage Results" MODIFIED="1575914208442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SignLanguage$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1576358398216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SignLanguage$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1576359331057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
