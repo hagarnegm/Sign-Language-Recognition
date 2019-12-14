@@ -15,7 +15,7 @@ def refpoint(img):
     y = centroid[1]
     img_centroid = np.copy(img)
     cv2.circle(img_centroid, (x, y), 80, (0, 0, 0), -1)
-    return dist_trans, img_centroid,centroid
+    return dist_trans, img_centroid, centroid
 
 
 def descriptor(image, center, descriptor):
