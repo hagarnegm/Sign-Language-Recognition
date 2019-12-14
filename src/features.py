@@ -21,7 +21,7 @@ def refpoint(img):
 def descriptor(image, center, descriptor):
     step = int(360/descriptor)
     dists = []
-    for i in range(2, 360, step):
+    for i in range(0, 360, step):
         if i == 90:
             y = np.arange(center[0]+1, np.shape[0])
             x = np.full(len(y), center[1])
@@ -44,6 +44,8 @@ def descriptor(image, center, descriptor):
     return dists
 
 
+def writeFeatures(dists):
+    pass
 
 
 
