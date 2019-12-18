@@ -80,10 +80,12 @@ def getBorders(image, type):
 
 
 def cropPicture(image):
+    original=image.shape[1]
     starth, endh, centerh = getBorders(image,0)
     startv, endv, centerv = getBorders(image,1)
-    image=image[startv:endv, starth:endh]
-    return image, centerh, centerv
+    image=image[startv:endv+1, starth:endh+1]
+    #image = image[startv:endv + 1, :]
+    return image, centerh, centerv,original
 
 
 def transform(image,index):
@@ -101,32 +103,82 @@ def transform(image,index):
     return False,None
 
 
-def extractFist(hand):
 
+def extractFist(hand):
+    hand[hand<255]=0
     HP = sum(hand[hand.shape[0]-1,:])
-    for i in range(hand.shape[1]-2,-1,-1):
+    start = int((3/4)*(hand.shape[0]-1))
+    #start=hand.shape[1]-1
+    cropPoint = start
+    for i in range(start,-1,-1):
         curr = sum(hand[i,:])
         if curr > HP:
             cropPoint = i
             break
         HP = curr
-    hand = hand[0:cropPoint+1]
+    # print(HP)
+    # print(curr)
+    # print(cropPoint)
+    # print(hand.shape[0]-4)
+    hand = hand[0:cropPoint+3, :]
+    hand[hand.shape[0]-1, :] = 0
+    hand[0, :] = 0
+    hand[:, hand.shape[1] - 1] = 0
+    hand[:, 0] = 0
     return hand
 
 
 def extractTip(img):
     img1 = np.array(img)
-    rows = img1.shape[0]-50
+    index = np.where(img1 == 255)[0][0]
+    tip = index + 100
+    rows = img1.shape[0] - tip
     cols = img1.shape[1]
     sub = np.zeros((rows, cols))
-    img1[50:][:] = sub
+    img1[tip:][:] = sub
     return img1
+def ZJF(image):
+    start=0
+    end=0
+    start1=0
+    end1=0
+    HP=[]
+    hp=0
+    VP=[]
+    vp=0
 
 
-img = io.imread("../images/L.jpg")
-img = hand(img)
-img, centerh, centerv = cropPicture(img)
-img = extractFist(img)
-img = extractTip(img)
-show_images([img])
 
+    for i in range (image.shape[0]):
+        for j in range(image.shape[1]):
+            hp+=image[i][j]
+        HP.append(hp)
+    for i in range (image.shape[1]):
+        for j in range(image.shape[0]):
+            hp+=image[j][i]
+        VP.append(vp)
+    for i in range(image.shape[1]):
+        if image[HP==max(HP)][j]==1:
+            start1=i
+            break
+    for i in range(image.shape[1]-1,0,-1):
+        if image[HP==max(HP)][j]==1:
+            end1=i
+            break
+    for i in range (image.shape[0]):
+        if image[i][np.floor(image.shape[1]/2)]==1:
+            start=i
+            break
+    for i in range (image.shape[0]-1,0,-1):
+        if image[i][np.floor(image.shape[1]/2)]==1:
+            end=i
+            break
+    hight=end-start
+    width=max(HP)
+    HP=np.asarry(HP)
+    VP = np.asarry(VP)
+    HP=HP/width
+    VP=VP/hight
+    HP1=HP[start:end,start1:end1]
+    VP1=VP[start:end,start1:end1]
+    return HP1,VP1
